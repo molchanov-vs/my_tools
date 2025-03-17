@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my_tools"
+version = "0.4"
+description = "Add DialogManagerKeys enums"
+authors = [{ name = "molchanov_vs", email = "molchanov.vsr@gmail.com" }]
+readme = "README.md"
+dependencies = ["pytz"]
+
+[tool.setuptools]
+packages = ["my_tools"]
+
+[project.urls]
+"Homepage" = "https://github.com/molchanov-vs/my_tools"
