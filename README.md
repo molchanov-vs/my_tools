@@ -2,10 +2,14 @@
 
 # installation
 ```bash
-pip install git+https://github.com/molchanov-vs/time_functions.git
+pip install git+https://github.com/molchanov-vs/my_tools.git
 ```
 
 # log
+
+## v0.4
+
+Add DialogManagerKeys enums
 
 ## v0.3
 
