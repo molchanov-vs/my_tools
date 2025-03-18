@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "my_tools"
-version = "0.4"
-description = "Add DialogManagerKeys enums"
+version = "0.5"
+description = "Add NUMS and format_counter"
 authors = [{ name = "molchanov_vs", email = "molchanov.vsr@gmail.com" }]
 readme = "README.md"
 dependencies = ["pytz"]

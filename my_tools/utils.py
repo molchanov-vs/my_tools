@@ -2,6 +2,7 @@ from datetime import datetime
 import pytz
 
 from .enums import DateTimeKeys
+from .globals import NUMS
 
 
 def get_datetime_now(
@@ -52,3 +53,16 @@ def get_time_delta(time: str) -> str:
         return f"{diff / 60:.1f}m"
     else:
         return f"{diff / 3600:.0f}h"
+    
+
+def format_counter(num: int) -> str:
+
+    if not isinstance(num, int) or num < 0:
+        raise TypeError("Input number not int or number < 0")
+    
+    num = str(num)
+
+    if len(num) == 1:
+        num = "0" + num
+
+    return ''.join([NUMS[n] for n in list(num)]) 

@@ -7,6 +7,9 @@ pip install git+https://github.com/molchanov-vs/my_tools.git
 
 # log
 
+## v0.5
+Add NUMS and format_counter
+
 ## v0.4
 
 Add DialogManagerKeys enums

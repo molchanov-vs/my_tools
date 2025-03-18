@@ -10,7 +10,7 @@ class DialogManagerKeys(str, Enum):
     FILTERS = "filters"
 
 
-class DateTimeKeys(Enum):
+class DateTimeKeys(str, Enum):
 
     DEFAULT = "default"
     NOW = "now"
