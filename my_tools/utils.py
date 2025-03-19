@@ -32,6 +32,10 @@ def get_datetime_now(
             # datetime.datetime(2025, 3, 19, 15, 0)
             return now.replace(minute=0, second=0, microsecond=0)
         
+        case DateTimeKeys.TODAY:
+            # datetime.datetime(2025, 3, 19, 0, 0)
+            return now.replace(hour=0, minute=0, second=0, microsecond=0)
+        
 
 def get_time_delta(time: str) -> str:
     """
@@ -78,8 +82,7 @@ async def calc_active_users_metrics(
         users: list[str]
         ) -> tuple[int, int, int]:
 
-    now: datetime = get_datetime_now(DateTimeKeys.NOW)
-    today = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    today: datetime = get_datetime_now(DateTimeKeys.TODAY)
 
     dau_threshold = today  # activity today counts as DAU
     wau_threshold = today - timedelta(days=7)

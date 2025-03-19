@@ -15,6 +15,7 @@ class DateTimeKeys(str, Enum):
     DEFAULT = "default"
     NOW = "now"
     NOW_ZERO = "now_zero"
+    TODAY = "today"
 
 
 class Langs(str, Enum):
