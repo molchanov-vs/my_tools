@@ -10,6 +10,10 @@ __all__ = [
     "get_time_delta", 
     "format_counter",
 
+    "calc_active_users_metrics",
+    "calc_mertics",
+    "get_users",
+
     "DateTimeKeys",
     "DialogManagerKeys",
     "Langs",
