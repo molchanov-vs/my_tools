@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "my_tools"
-version = "0.6"
-description = "Add CLOCKS to global"
+version = "0.7"
+description = "Add admin tools"
 authors = [{ name = "molchanov_vs", email = "molchanov.vsr@gmail.com" }]
 readme = "README.md"
-dependencies = ["pytz"]
+dependencies = ["pytz", "aiogram"]
 
 [tool.setuptools]
 packages = ["my_tools"]

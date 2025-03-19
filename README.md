@@ -7,6 +7,9 @@ pip install git+https://github.com/molchanov-vs/my_tools.git
 
 # log
 
+## v0.7
+Add admin tools
+
 ## v0.6
 Add CLOCKS to global
 
