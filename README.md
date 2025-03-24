@@ -6,6 +6,8 @@ pip install git+https://github.com/molchanov-vs/my_tools.git
 ```
 
 # log
+## v0.8
+Update get_users
 
 ## v0.7
 Add admin tools

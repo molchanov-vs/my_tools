@@ -134,13 +134,13 @@ async def calc_active_users_metrics(
 async def get_users(db: RedisStorage, admins: list[int]) -> list[int]:
     
     users = []
-    async for key in db.redis.scan_iter("*"):
-        key_str = key.decode("utf-8")
-        if key_str.isdigit():
-            user_id = int(key_str)
-            if user_id not in admins:
-                users.append(user_id)
+    async for user in db.redis.sscan_iter("known_users"):
+        # Decode bytes to string, if needed
+        if isinstance(user, bytes):
+            user = user.decode("utf-8")
 
+        if user not in admins:
+            users.append(user)
     return users
 
 

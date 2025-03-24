@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "my_tools"
-version = "0.7"
-description = "Add admin tools"
+version = "0.8"
+description = "Update get_users"
 authors = [{ name = "molchanov_vs", email = "molchanov.vsr@gmail.com" }]
 readme = "README.md"
 dependencies = ["pytz", "aiogram"]
